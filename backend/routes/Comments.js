@@ -2,8 +2,8 @@ const express = require("express")
 const router = express.Router()
 const bcrypt = require('bcryptjs')
 const User = require ('../models/User')
-const post = require('../models/Post')
-const Comment = require('../models/Comments')
+const post = require('./Post')
+const Comment = require('./Comments')
 const verifyToken = require('../verifyToken')
 
 // creating a comment
