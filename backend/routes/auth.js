@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const user = require('../models/user')
+const user = require('../models/User')
 const bcrypt = require('bcryptjs') // for hashing passwords
 const jwt = require('jsonwebtoken') // stores tokens of the user after signup
 
