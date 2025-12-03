@@ -8,11 +8,15 @@ import CreatePost from "./pages/CreatePost";
 import EditPost from "./pages/EditPost";
 import PostDetails from "./pages/PostDetails";
 import Profile from "./pages/Profile";
+import UserContextProvider from "./context/UserContext";
+
+
+
 
 function App (){
   return (
     <>
-    <userContextProvider>
+    <UserContextProvider>
     <Routes>
       <Route exact path = '/' element ={<Home/>}/>
       <Route exact path = '/login' element ={<Login/>}/>
@@ -23,7 +27,7 @@ function App (){
       <Route exact path = '/myblogs/:id' element ={<MyBlogs/>}/>
       <Route exact path = '/profile/id' element ={<Profile/>}/>
     </Routes>
-    </userContextProvider>
+    </UserContextProvider>
     </>
     
   )

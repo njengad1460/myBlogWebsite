@@ -4,6 +4,9 @@ const user = require('../models/User')
 const bcrypt = require('bcryptjs') // for hashing passwords
 const jwt = require('jsonwebtoken') // stores tokens of the user after signup
 
+
+// register api
+
 router.post("/register", async (req, res) => {
     try {
         const {username, email, password} = req.body

@@ -1,10 +1,10 @@
 import React from 'react'
-import { UseContext } from '../context/UserContex'
+import { UserContext } from '../context/UserContext'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 function Menu() {
-  const { user, setUser } = React.useContext(UseContext)
+  const { user, setUser } = React.useContext(UserContext)
   const navigate = useNavigate()
 
   async function handleLogout() {
